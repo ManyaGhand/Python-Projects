@@ -65,6 +65,7 @@ def count_down(count):
 
 
 # ---------------------------- UI SETUP ------------------------------- #
+
 FG = GREEN
 TEXT = "✔"
 window = Tk()
