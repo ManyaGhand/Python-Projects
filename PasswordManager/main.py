@@ -4,6 +4,7 @@ from random import randint , shuffle , choice
 import pyperclip
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
+
 def generate_password():
 
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
@@ -34,7 +35,6 @@ def save_password():
         messagebox.showinfo(title = "Oops", message = "Please don't leave any fields empty! ")
 
     else:
-
         is_ok = messagebox.showinfo(title=website, message=f"These are the details entered: \n "
                                     f"Email: {email} \n Password: {password} \n Is it ok to save? ")
         if is_ok:
