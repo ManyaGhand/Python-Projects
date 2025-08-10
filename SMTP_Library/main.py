@@ -13,7 +13,7 @@ random_quote = random.choice(quote)
 email = "manya79997@gmail.com"
 password = "zjcr fkyj vbbs hixw"
 
-if weekday == 6:
+if weekday == 0:
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls() #blocks any intervention
         connection.login(user = email , password = password)
@@ -23,6 +23,7 @@ if weekday == 6:
                 msg = f"Subject: Quote \n\n "
                       f"{random_quote}."
         )
+
 
 
 
