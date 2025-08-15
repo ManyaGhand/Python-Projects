@@ -22,13 +22,16 @@ parameters = {
 resource = requests.get(url= STOCK_ENDPOINT, params= parameters)
 resource.raise_for_status()
 data = resource.json()["Time Series (Daily)"]
+
 data_list = [value for (key,value) in data.items]
 yesterday_data = data_list[0]
 yesterday_closing_price = yesterday_data["4. close"]
 
 day_before_yesterday = data_list[1]
 day_before_yesterday_closing_price = day_before_yesterday["4. close"]
+
 difference =day_before_yesterday_closing_price - yesterday_closing_price
+
 up_down = None
 if up_down >0 :
     up_down = "🔺"
