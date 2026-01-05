@@ -20,8 +20,8 @@ parameters = {
 }
 
 resource = requests.get(url= STOCK_ENDPOINT, params= parameters)
-resource.raise_for_status()
-data = resource.json()["Time Series (Daily)"]
+resource.raise_for_status()  #check status
+data = resource.json()["Time Series (Daily)"] 
 
 data_list = [value for (key,value) in data.items]
 yesterday_data = data_list[0]
