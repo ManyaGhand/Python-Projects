@@ -1,25 +1,48 @@
 # Workout Tracker
 
-A Python application to log workouts and track exercise routines over time.
+Workout Tracker is a Python-based automation tool that logs workout activities by processing natural language exercise input and storing structured workout data in Google Sheets.
+
+---
 
 ## Features
-- Logs workout sessions with exercises, sets, and repetitions
-- Stores workout history per session
-- Enables review of workouts across days and routines
-- Simplifies data entry for consistent logging
+
+- Accepts natural language input for workout logging  
+- Extracts exercise name, duration, and calories burned  
+- Automatically records workout data with date and time  
+- Stores workout history in Google Sheets for tracking  
+- Supports multiple exercises in a single session  
+
+---
 
 ## Tech Stack
-- Python
+
+- Python  
+- Requests  
+- REST APIs  
+- JSON  
+- Google Sheets  
+
+---
 
 ## How It Works
-1. Accepts workout input per session  
-2. Stores workout data locally  
-3. Allows review of past workout sessions  
+
+1. Accepts exercise details as natural language input  
+2. Sends data to a fitness API for exercise analysis  
+3. Parses exercise name, duration, and calories from the response  
+4. Logs workout data with timestamps into Google Sheets  
+
+---
 
 ## Usage
-- Run the script and log workouts interactively
-- Review stored workout history anytime
+
+- Configure API credentials and Google Sheets endpoint in the script  
+- Run the script and enter workout details when prompted  
+- Review logged workout history in Google Sheets  
+
+---
 
 ## Future Improvements
-- Add progress analytics
-- Export workout history to files or spreadsheets
+
+- Add data visualization for workout analytics  
+- Support multiple users  
+- Secure API keys using environment variables  
